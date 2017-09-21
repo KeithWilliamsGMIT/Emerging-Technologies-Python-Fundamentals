@@ -15,5 +15,13 @@ cd Emerging-Technologies-Python-Fundamentals
 
 *Solution:*
 ```
-python hello-world.py
+python3 01-hello-world.py
+```
+
+## 2. Current time
+*Problem:* Write a program that prints the current time and date to the console.
+
+*Solution:*
+```
+python3 02-current-time.py
 ```
