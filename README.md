@@ -25,3 +25,11 @@ python3 01-hello-world.py
 ```
 python3 02-current-time.py
 ```
+
+## 3. FizzBuzz
+*Problem:* Write a program that prints the numbers from 1 to 100, except for the following conditions. For multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+*Solution:*
+```
+python 03-fizzbuzz.py
+```
