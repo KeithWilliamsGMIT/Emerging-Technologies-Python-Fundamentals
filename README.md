@@ -5,8 +5,15 @@ This repository contains the solutions to the first problem sheet on python fund
 ## Getting Started
 
 Clone the repository and navigate to the root of the repository.
-
 ```
 git clone https://github.com/KeithWilliamsGMIT/Emerging-Technologies-Python-Fundamentals.git
 cd Emerging-Technologies-Python-Fundamentals
+```
+
+## 1. Hello, World!
+*Problem:* Write a program that prints “Hello, world!” to the screen.
+
+*Solution:*
+```
+python hello-world.py
 ```
