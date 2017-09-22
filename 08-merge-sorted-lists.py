@@ -2,9 +2,20 @@
 # Date: 22/09/2017
 # Adapted from:
 #	https://stackoverflow.com/questions/4173225/my-implementation-of-merging-two-sorted-lists-in-linear-time-what-could-be-imp
+#	https://docs.python.org/3/library/functions.html#sorted
 
 from sys import argv
 
+# THIS FUNCTION DEMONSTRATES HOW TO MERGE AND SORT TWO LISTS WITH THE BUILT-IN SORT FUNCTION.
+# This is function takes two lists, sorted or unsorted, as arguments.
+# It is responsible for merging these lists into a single sorted list.
+# First the lists are concatenated together to form a new list.
+# This function uses the built-in sorted method to sort this new list.
+# Note that this function can return a list with duplicate elements.
+def merge_lists(l1, l2):
+	return sorted(l1 + l2)
+
+# THIS FUNCTION DEMONSTRATES AN ALGORITHM FOR MERGING AND SORTING TWO SORTED LISTS.
 # This is function takes two sorted lists as arguments.
 # It is responsible for merging these lists into a single sorted list.
 # First a new list is created and will be used to store the sorted elements.
