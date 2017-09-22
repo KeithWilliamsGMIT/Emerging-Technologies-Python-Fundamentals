@@ -99,3 +99,10 @@ python 09-newton-square-root.py <number>
 ```
 
 The number to approximate the square root for should be passed in as the first argument. This value should be a positive float greater than 0. For example, if 25 is passed in, the expected output should be 5 as follows.
+
+```
+newton_square_root(25.000000) = 5.000000
+match.sqrt(25.000000) = 5.000000
+```
+
+The first value is the approximation of the square root using Newton's method. The second value is the result of using the sqrt() from the math library. This is only to show the accuracy of the approximation. If an invalid float is passed in an "Invalid number! Must be a positive number greater than zero!" message is outputted. If the argument is a string a "(1) Invalid argument!" message is outputted. If no argument is given a "No argument!" message is outputted.
