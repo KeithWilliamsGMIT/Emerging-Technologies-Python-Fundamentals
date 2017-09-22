@@ -53,3 +53,13 @@ python 05-guessing-game.py
 ```
 
 When the game starts the user will be prompted to enter a guess. This guess should be a positive integer between 1 and 100 inlusive. If any other value is entered a message should inform the user of an incorrect input. After entering a valid guess the user will be informed whether it was too low, too high or correct. If correct the number of tries and a non-repeating list of guess is outputted. Otherwise, the user will be prompted for another guess. If the same guess is entered more than once a message will be outputted to inform the user. This guess is not included in the total number of tries.
+
+## 6. Largest and smallest in list
+*Problem:* Write a function that returns the largest and smallest elements in a list.
+
+*Solution:*
+```
+python 06-largest-and-smallest.py <comma-separated-list-of-integer>
+```
+
+A comma separated list of integers should be passed in as the first command line argument. For example, by passing in 9,3,4,5,2,10 the expected result is that the smallest number is **2** and the largest number is **10**. If an invalid argument is given an "Invalid argument!" message will be displayed.
