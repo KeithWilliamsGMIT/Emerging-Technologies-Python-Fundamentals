@@ -63,3 +63,13 @@ python 06-largest-and-smallest.py <comma-separated-list-of-integer>
 ```
 
 A comma separated list of integers should be passed in as the first command line argument. For example, by passing in 9,3,4,5,2,10 the expected result is that the smallest number is **2** and the largest number is **10**. If an invalid argument is given an "Invalid argument!" message will be displayed.
+
+## 7. Palindrome test
+*Problem:* Write a function that tests whether a string is a palindrome.
+
+*Solution:*
+```
+python 07-palindrome.py "<phrase>"
+```
+
+The word to check for a palindrome should be passed in as the first command line argument. If it is a palindrome "True" will be outputted, for example, "kayak". Otherwise, "False" will be outputted, for example "car". Note that the phase can be **case insensitive** and can contain spaces. If no phrase is given a "No argument!" message will be shown.
