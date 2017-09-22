@@ -1,8 +1,11 @@
 # Author: Keith Williams
 # Date 22/09/2017
+# Adapted from:
+#	https://medium.com/programminginpython-com/python-program-to-find-the-largest-and-smallest-number-in-a-list-fd8fac8aba08
 
 from sys import argv
 
+# THIS FUNCTION DEMONSTRATES AN ALGORITHM TO RETURN THE LASRGEST AND SMALLEST VALUES IN A LIST.
 # This function takes a list as a parameter.
 # The largest and smallest values are set to the first element in the list.
 # All elements are then iterated over and compared to the largest, and possibly smallest, values.
@@ -10,15 +13,23 @@ from sys import argv
 # These values are returned as a tuple which can be unpacked by the calling function.
 # Note that the fist value in the tuple is the largest and the second value is the smallest.
 def get_largest_and_smallest_manually(l):
-    largest = smallest = l[0]
-    
-    for i in l:
-        if l[i] > largest:
-            largest = l[i]
-        elif l[i] < smallest:
-            smallest = l[i]
-    
-    return largest, smallest
+	largest = smallest = l[0]
+	
+	for i in l:
+		if l[i] > largest:
+			largest = l[i]
+		elif l[i] < smallest:
+			smallest = l[i]
+	
+	return largest, smallest
+
+# THIS FUNCTION DEMONSTRATES HOW TO RETURN THE LASRGEST AND SMALLEST VALUES IN A LIST USING THE BUILT-IN MAX AND MIN FUNCTIONS.
+# This function takes a list as a parameter.
+# It uses the built-in max and min functions to find the largest and smallest values in the list.
+# These values are returned as a tuple which can be unpacked by the calling function.
+# Note that the fist value in the tuple is the largest and the second value is the smallest.
+def get_largest_and_smallest(l):
+	return max(l), min(l)
 
 # Only execute this function if this is the man module.
 # This function parses the first argument to a list of integers.
