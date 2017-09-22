@@ -106,3 +106,13 @@ match.sqrt(25.000000) = 5.000000
 ```
 
 The first value is the approximation of the square root using Newton's method. The second value is the result of using the sqrt() from the math library. This is only to show the accuracy of the approximation. If an invalid float is passed in an "Invalid number! Must be a positive number greater than zero!" message is outputted. If the argument is a string a "(1) Invalid argument!" message is outputted. If no argument is given a "No argument!" message is outputted.
+
+## 10. Reverse string
+*Problem:* Write a function to reverse a string.
+
+*Solution:*
+```
+python 10-reverse.py "<string>"
+```
+
+The string to reverse should be passed in as the first command line argument, surrounded by double quotes if it contains spaces. The reversed string will be outputted. For example, by passing in "Reverse this string!" the expected output is "!gnirts siht esreveR".
