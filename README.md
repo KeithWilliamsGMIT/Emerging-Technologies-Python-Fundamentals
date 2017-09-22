@@ -73,3 +73,13 @@ python 07-palindrome.py "<phrase>"
 ```
 
 The word to check for a palindrome should be passed in as the first command line argument. If it is a palindrome "True" will be outputted, for example, "kayak". Otherwise, "False" will be outputted, for example "car". Note that the phase can be **case insensitive** and can contain spaces. If no phrase is given a "No argument!" message will be shown.
+
+## 8. Merge list and sort
+*Problem:* Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6].
+
+*Solution:*
+```
+python 08-merge-sorted-lists.py <sorted-list-1> <sorted-list-2>
+```
+
+Two comma separated list of integers should be passed in as the first and second command line arguments. For example, if the sorted lists 1,4,6 and 2,3,5,6 are passed in the expected result is [1,2,3,4,5,6,6]. Notice that duplicate entries are possible. If an invalid argument is given an "(n) Invalid argument!" message will be displayed where n is the index of the argument that caused the error. An error message would also occur if two lists weren't given as command line arguments.
