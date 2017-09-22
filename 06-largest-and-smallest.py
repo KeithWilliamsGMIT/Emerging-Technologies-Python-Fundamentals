@@ -31,7 +31,7 @@ def get_largest_and_smallest_manually(l):
 def get_largest_and_smallest(l):
 	return max(l), min(l)
 
-# Only execute this function if this is the man module.
+# Only execute this function if this is the main module.
 # This function parses the first argument to a list of integers.
 # 1) First get the first command line argument as a string - argv[1]
 # 2) Break this comma separated string up into a list of substrings - .split(',')

@@ -19,16 +19,16 @@ import math
 arg = argv[1]
 
 try:
-    # Try to convert to an int
-    n = int(arg)
-    
-    # Calculate the factorial of the number
-    factorial = math.factorial(n)
-    
-    # Calculate the sum of it's digits
-    digit_sum = sum(map(int, str(factorial)))
-    
-    # Print the result
-    print(digit_sum)
+	# Try to convert to an int
+	n = int(arg)
+	
+	# Calculate the factorial of the number
+	factorial = math.factorial(n)
+	
+	# Calculate the sum of it's digits
+	digit_sum = sum(map(int, str(factorial)))
+	
+	# Print the result
+	print(digit_sum)
 except ValueError:
-    print("Invalid argument!")
+	print("Invalid argument!")

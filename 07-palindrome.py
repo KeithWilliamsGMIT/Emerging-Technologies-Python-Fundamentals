@@ -1,5 +1,5 @@
 # Author: Keith Williams
-# Date 22/09/2017
+# Date: 22/09/2017
 # Adapted from:
 #	https://stackoverflow.com/questions/509211/explain-slice-notation
 
@@ -21,7 +21,7 @@ def palindrome(phrase):
 	
 	return chars == chars[::-1]
 
-# Only execute this function if this is the man module.
+# Only execute this function if this is the main module.
 # Read the first command line argument and pass check if it is palindrome.
 # Output "True" if it is. Otherwise, output "False".
 if __name__ == "__main__":
