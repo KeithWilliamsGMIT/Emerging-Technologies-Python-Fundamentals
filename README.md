@@ -43,3 +43,13 @@ python 04-factorial-digit-sum.py <number>
 ```
 
 The number to calculate the factorial digit sum of should be passed in as an arguement. For example, the factorial digit sum of 100 is **648**.
+
+## 5. Guessing game
+*Problem:* Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. It counts only as one try if they input the same number multiple times consecutively.
+
+*Solution:*
+```
+python 05-guessing-game.py
+```
+
+When the game starts the user will be prompted to enter a guess. This guess should be a positive integer between 1 and 100 inlusive. After entering a valid guess the user will be informed whether it was too low, too high or correct. If correct the number of tries and a non-repeating list of guess is outputted. Otherwise, the user will be prompted for another guess. If the same guess is entered more than once a message will be outputted to inform the user. This guess is not included in the total number of tries.
