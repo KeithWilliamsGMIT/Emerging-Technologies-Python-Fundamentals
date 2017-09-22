@@ -7,11 +7,13 @@ from math import sqrt
 # This function is responsible for approximating the square root of a number using Newton's method.
 # This function takes one argument, ideally a float, for which to approximate the square root for.
 # First a starting point, z, is calculated by dividing the original number by two.
-# Apply z - ((z*z - x) / (2 * z)) ten times to approximate the square root of x.
+# Apply z - ((z*z - x) / (2 * z)) to approximate the square root of x until the delta is < 0.000001.
+# Note: Floats are rounded to the sixth decimal place.
 def newton_square_root(x):
 	current = x / 2
+	delta = 0
 	
-	for i in range(10):
+	while abs(current - z_next(x, current)) >= 0.000001:
 		current = z_next(x, current)
 	
 	return current
@@ -38,6 +40,6 @@ if __name__ == "__main__":
 		else:
 			print("Invalid number! Must be a positive number greater than zero!")
 	except ValueError:
-		print("(%s) Invalid argument!" % (n))
+		print("(1) Invalid argument!")
 	except IndexError:
 		print("No argument!")
