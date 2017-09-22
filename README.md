@@ -83,3 +83,19 @@ python 08-merge-sorted-lists.py <sorted-list-1> <sorted-list-2>
 ```
 
 Two comma separated list of integers should be passed in as the first and second command line arguments. For example, if the sorted lists 1,4,6 and 2,3,5,6 are passed in the expected result is [1,2,3,4,5,6,6]. Notice that duplicate entries are possible. If an invalid argument is given an "(n) Invalid argument!" message will be displayed where n is the index of the argument that caused the error. An error message would also occur if two lists weren't given as command line arguments.
+
+## 9. Newton’s method for square roots
+*Problem:* Implement the square root function using Newton’s method. In this case, Newton’s method is to approximate sqrt(x) by picking a starting point z and then repeating:
+
+```
+z_next = z - ((z*z - x) / (2 * z))
+```
+
+To begin with, just repeat that calculation 10 times and see how close you get to the answer for various values (1, 2, 3, …). Next, change the loop condition to stop once the value has stopped changing (or only changes by a very small delta). How close are you to the math.sqrt value?
+
+*Solution:*
+```
+python 09-newton-square-root.py <number>
+```
+
+The number to approximate the square root for should be passed in as the first argument. This value should be a positive float greater than 0. For example, if 25 is passed in, the expected output should be 5 as follows.
