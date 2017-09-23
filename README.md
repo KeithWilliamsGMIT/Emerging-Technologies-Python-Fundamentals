@@ -31,7 +31,7 @@ python3 02-current-time.py
 
 *Solution:*
 ```
-python 03-fizzbuzz.py
+python3 03-fizzbuzz.py
 ```
 
 ## 4. Factorial digit sum
@@ -39,7 +39,7 @@ python 03-fizzbuzz.py
 
 *Solution:*
 ```
-python 04-factorial-digit-sum.py <number>
+python3 04-factorial-digit-sum.py <number>
 ```
 
 The number to calculate the factorial digit sum of should be passed in as an arguement. For example, the factorial digit sum of 100 is **648**.
@@ -49,7 +49,7 @@ The number to calculate the factorial digit sum of should be passed in as an arg
 
 *Solution:*
 ```
-python 05-guessing-game.py
+python3 05-guessing-game.py
 ```
 
 When the game starts the user will be prompted to enter a guess. This guess should be a positive integer between 1 and 100 inlusive. If any other value is entered a message should inform the user of an incorrect input. After entering a valid guess the user will be informed whether it was too low, too high or correct. If correct the number of tries and a non-repeating list of guess is outputted. Otherwise, the user will be prompted for another guess. If the same guess is entered more than once a message will be outputted to inform the user. This guess is not included in the total number of tries.
@@ -59,7 +59,7 @@ When the game starts the user will be prompted to enter a guess. This guess shou
 
 *Solution:*
 ```
-python 06-largest-and-smallest.py <comma-separated-list-of-integer>
+python3 06-largest-and-smallest.py <comma-separated-list-of-integer>
 ```
 
 A comma separated list of integers should be passed in as the first command line argument. For example, by passing in 9,3,4,5,2,10 the expected result is that the smallest number is **2** and the largest number is **10**. If an invalid argument is given an "Invalid argument!" message will be displayed.
@@ -69,7 +69,7 @@ A comma separated list of integers should be passed in as the first command line
 
 *Solution:*
 ```
-python 07-palindrome.py "<phrase>"
+python3 07-palindrome.py "<phrase>"
 ```
 
 The word to check for a palindrome should be passed in as the first command line argument. If it is a palindrome "True" will be outputted, for example, "kayak". Otherwise, "False" will be outputted, for example "car". Note that the phase can be **case insensitive** and can contain spaces. If no phrase is given a "No argument!" message will be shown.
@@ -79,7 +79,7 @@ The word to check for a palindrome should be passed in as the first command line
 
 *Solution:*
 ```
-python 08-merge-sorted-lists.py <sorted-list-1> <sorted-list-2>
+python3 08-merge-sorted-lists.py <sorted-list-1> <sorted-list-2>
 ```
 
 Two comma separated list of integers should be passed in as the first and second command line arguments. For example, if the sorted lists 1,4,6 and 2,3,5,6 are passed in the expected result is [1,2,3,4,5,6,6]. Notice that duplicate entries are possible. If an invalid argument is given an "(n) Invalid argument!" message will be displayed where n is the index of the argument that caused the error. An error message would also occur if two lists weren't given as command line arguments.
@@ -95,7 +95,7 @@ To begin with, just repeat that calculation 10 times and see how close you get t
 
 *Solution:*
 ```
-python 09-newton-square-root.py <number>
+python3 09-newton-square-root.py <number>
 ```
 
 The number to approximate the square root for should be passed in as the first argument. This value should be a positive float greater than 0. For example, if 25 is passed in, the expected output should be 5 as follows.
@@ -112,7 +112,7 @@ The first value is the approximation of the square root using Newton's method. T
 
 *Solution:*
 ```
-python 10-reverse.py "<string>"
+python3 10-reverse.py "<string>"
 ```
 
 The string to reverse should be passed in as the first command line argument, surrounded by double quotes if it contains spaces. The reversed string will be outputted. For example, by passing in "Reverse this string!" the expected output is "!gnirts siht esreveR".
