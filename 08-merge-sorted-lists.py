@@ -43,9 +43,10 @@ def merge_sorted_lists(l1, l2):
 # 3) Using the built-in map function apply the built-in int function to each element of the substring.
 #    This will convert each element to an int, if possible, and return the new list of ints.
 #    If any of the strings cannot be parsed to an int then a message is outputted to inform the user and None is returned.
+# 4) Convert the map to a list using the built-in list function.
 def get_integer_list(n):
 	try:
-		return map(int, argv[n].split(','))
+		return list(map(int, argv[n].split(',')))
 	except ValueError:
 		print("(%s) Invalid argument!" % (n))
 	except IndexError:

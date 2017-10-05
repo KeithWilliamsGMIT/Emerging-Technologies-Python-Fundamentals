@@ -16,10 +16,10 @@ def get_largest_and_smallest_manually(l):
 	largest = smallest = l[0]
 	
 	for i in l:
-		if l[i] > largest:
-			largest = l[i]
-		elif l[i] < smallest:
-			smallest = l[i]
+		if i > largest:
+			largest = i
+		elif i < smallest:
+			smallest = i
 	
 	return largest, smallest
 
@@ -38,10 +38,11 @@ def get_largest_and_smallest(l):
 # 3) Using the built-in map function apply the built-in int function to each element of the substring.
 #    This will convert each element to an int, if possible, and return the new list of ints.
 #    If any of the strings cannot be parsed to an int then a message is outputted to inform the user and None is returned.
+# 4) Convert the map to a list using the built-in list function.
 # If the argument is structured correctly pass the list to a function to find the largest and smallest values and output the result.
 if __name__ == "__main__":
 	try:
-		l = map(int, argv[1].split(','))
+		l = list(map(int, argv[1].split(',')))
 		largest, smallest = get_largest_and_smallest_manually(l)
 		print("Smallest: " + str(smallest))
 		print("Largest: " + str(largest))

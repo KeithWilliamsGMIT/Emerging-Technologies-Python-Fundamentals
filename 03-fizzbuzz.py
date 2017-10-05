@@ -7,7 +7,7 @@
 # 2) For multiples of three print "Fizz".
 # 3) For multiples of five print "Buzz".
 # 4) Otherwise print the number.
-for i in range(101):
+for i in range(1, 101):
 	if i%3 == 0 and i%5 == 0:
 		print("FizzBuzz")
 	elif i%3 == 0:
